@@ -37,4 +37,14 @@ public class FactoryTest {
         Sender sender = SendFactory.produceSmsSender();
         sender.send();
     }
+
+    /**
+     * 抽象工厂方法模式测试
+     */
+    @Test
+    public void testAbstract(){
+        Provider provider = new SendSmsFactory();
+        Sender sender = provider.produce();
+        sender.send();
+    }
 }
