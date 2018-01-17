@@ -1,0 +1,20 @@
+龙华医院lehr项目已经实施，目前遇到问题：
+1，安装完成Orion Heather 公司的cdr软件之后，实施这个项目需要做哪些工作，工作的具体流程是什么？
+2，第一步我们需要做什么，有哪些东西需要初始化，一些自定义的字典怎么做？
+4，消息入库前需要做哪些工作，入库消息的顺序是怎么样的？
+3，例如demo数据门诊登记ADT^A01消息:
+MSH|^~\\&|Rhapsody^Rhapsody|PIT^PIT|CDR^CDR|^Test|20161229025423||ADT^A01|JCR02133|P|2.4
+EVN||20161229025423
+PID|||84568-4564^^^&OHCP~104532R^^^&OHM||Cardinal^John^Q||19491112023046|M|||840 Chester Ave ^Pasadena^^^6532^NZL^H||(463) 321-4568
+PD1|||Bough Family Clinic^^1101^^^&OHPCP|Gx10-000998^WOOD^Brandon^R^^Dr^^^&OHA-PV
+NK1|0|Jargon^Carol |Sister^Sister||(408) 455-2112
+PV1||I|Fl003^^Bd003B^&QS-H1^^^^Fl003|I|||Qx10-000824^Martin^Joe^Sam^^Dr^^^&OHA-PV||Qx10-000824^Martin^Joe^Sam^^Dr^^^&OHA-PV|GM||||7|||||ER44568-4564.1^^^&OHCP|||||||||||||||||||||||||20100224171537
+PV2|||1^Infection of cut to arm^ORION
+AL1|1|DAL|18^Penicillin^Test|MO^Moderate|Hives|19950603
+AL1|2|EAL|19^Bee Stings^Test|SE^Severe|Anaphylactic shock|19910603
+AL1|3|FAL|23^Peanuts^Test|SE^Severe|Anaphylactic shock|19910603
+
+（1）证件类型：OHCP是怎么添加的，我们要添加自己的证件类型该如何添加
+（2）医院名字：我们该如何添加我们自己的医院名字，我把消息里所有的医院名字都改为龙华人民医院，可在portal上显示该患者的就诊历史里的医院名称仍是City Hospital
+（3）龙华医院采集的原始数据门诊登记里没有PD1信息段，这个信息段不传是否会对其他消息的入库和portal页面的展示有影响？
+
