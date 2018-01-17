@@ -21,7 +21,15 @@ public class SendFactory {
         return  new MailSender();
     }
 
-    public Sender producerSms(){
+    public Sender produceSms(){
+        return new SmsSender();
+    }
+
+    public static Sender produceMailSender(){
+        return new MailSender();
+    }
+
+    public static Sender produceSmsSender(){
         return new SmsSender();
     }
 }

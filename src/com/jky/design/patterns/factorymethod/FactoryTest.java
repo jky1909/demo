@@ -28,4 +28,13 @@ public class FactoryTest {
         Sender sender = factory.produceMail();
         sender.send();
     }
+
+    /**
+     * 静态工厂方法模式测试
+     */
+    @Test
+    public void testStatic(){
+        Sender sender = SendFactory.produceSmsSender();
+        sender.send();
+    }
 }
