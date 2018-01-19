@@ -15,9 +15,5 @@ public class Test {
         Builder builder = new Builder();
         builder.produceSmsSnder(10);
         builder.produceMailSnder(10);
-        List<Sender> list = builder.getList();
-        list.get(0).send();
-        list.get(10).send();
-
     }
 }

@@ -23,6 +23,9 @@ public class Builder {
         for (int i = 0; i < count; i++) {
             list.add(new MailSender());
         }
+        for(Sender sender : list){
+            sender.send();
+        }
     }
 
     /**
@@ -32,6 +35,9 @@ public class Builder {
     public void produceSmsSnder(int count){
         for (int i = 0; i < count; i++) {
             list.add(new SmsSender());
+        }
+        for(Sender sender : list){
+            sender.send();
         }
     }
 
