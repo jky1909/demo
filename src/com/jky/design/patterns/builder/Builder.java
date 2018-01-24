@@ -8,8 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Create by jky on 2018/01/18
  * 建造者模式
+ * @author jky
+ * @date 2018/01/18
  */
 public class Builder {
 
