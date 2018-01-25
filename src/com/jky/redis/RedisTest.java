@@ -6,7 +6,11 @@ import redis.clients.jedis.Jedis;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TestRedis {
+/**
+ * @author jky
+ * @date 2018/01/25
+ */
+public class RedisTest {
 
     @Test
     public void testString(){
