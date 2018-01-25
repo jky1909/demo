@@ -5,6 +5,7 @@ package com.jky.design.patterns.factorymethod;
  * MailSender类的生产工厂类
  */
 public class SendSmsFactory implements Provider{
+    @Override
     public Sender produce() {
         return new SmsSender();
     }
