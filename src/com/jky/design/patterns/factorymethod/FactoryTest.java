@@ -4,7 +4,7 @@ import org.junit.Test;
 
 /**
  * @author jky
- * @Time 2018-01-16
+ * @date 2018/01/16
  * 工厂方法测试
  */
 public class FactoryTest {
