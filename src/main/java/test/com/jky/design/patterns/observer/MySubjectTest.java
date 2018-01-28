@@ -4,15 +4,16 @@ import com.jky.design.patterns.observer.MySubject;
 import com.jky.design.patterns.observer.Observer1;
 import com.jky.design.patterns.observer.Observer2;
 import com.jky.design.patterns.observer.Subject;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.Before; 
-import org.junit.After; 
 
-/** 
+
+/**
 * MySubject Tester. 
 * 
 * @author <jky>
-* @since <pre>Ò»ÔÂ 22, 2018</pre> 
+* @since <pre></pre>
 * @version 1.0 
 */ 
 public class MySubjectTest { 
