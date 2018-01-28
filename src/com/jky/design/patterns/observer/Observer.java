@@ -5,5 +5,9 @@ package com.jky.design.patterns.observer;
  * 依赖于主对象的接口
  */
 public interface Observer {
+
+    /**
+     * 升级
+     */
     void update();
 }

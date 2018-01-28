@@ -20,6 +20,7 @@ public class Prototype implements Cloneable,Serializable {
      * 浅复制
      * @return
      */
+    @Override
     public Object clone() throws CloneNotSupportedException {
         Prototype prototype = (Prototype) super.clone();
         return prototype;
