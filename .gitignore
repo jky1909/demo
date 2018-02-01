@@ -9,7 +9,7 @@
 gen
 
 .idea/
-target/
+
 out/
 
 /.idea/modules.xml
