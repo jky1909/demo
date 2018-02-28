@@ -35,7 +35,12 @@ public class CalendarDemo {
         calendar.get(Calendar.SECOND);//秒
         calendar.get(Calendar.DAY_OF_WEEK);//星期（Locale.ENGLISH情况下，周日是1,剩下自己推算）
 
+        Calendar calendar1New = Calendar.getInstance();
+        // 设定为 5 小时以前，后者大，显示 -1
+        calendar1New.add(Calendar.MONTH,-5);
+        System.out.println(calendar1New.compareTo(calendar));
 
+        
 
     }
 }
