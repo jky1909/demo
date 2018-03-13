@@ -13,6 +13,10 @@ public class TestStudent {
         String str = "shenzhen";
         changeStr(str);
         System.out.println(str);
+        StringBuilder stringBuilder = new StringBuilder("");
+        changeSb(stringBuilder);
+        System.out.println(stringBuilder);
+
     }
 
     public static void change(Student student){
@@ -22,5 +26,8 @@ public class TestStudent {
 
     public static void changeStr(String str){
         str = "beijing";
+    }
+    public static void changeSb(StringBuilder stringBuilder){
+        stringBuilder = stringBuilder.append("shanghai");
     }
 }
