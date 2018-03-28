@@ -1,5 +1,6 @@
 package com.jky.design.patterns.singleton;
 
+
 /**
  * Create by jky on 2018/01/17
  * 懒汉式单例（静态内部类）
@@ -21,5 +22,6 @@ public class Singleton {
     public Object readResolve() {
         return getInstance();
     }
+
 
 }
