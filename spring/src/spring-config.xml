@@ -2,7 +2,18 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean  id = "student"  class = "com.jky.spring.Student" >
+
+    <bean  id = "student"  class = "com.spring.Student" >
+        <!-- set方法注入
+        <property name="name" value="小明"/>
+        <property name="age" value="12"/> -->
+
+        <constructor-arg value="张三"/>
+        <constructor-arg>
+            <value>12</value>
+        </constructor-arg>
+
+
     </bean>
 
 </beans>

@@ -1,12 +1,20 @@
-package com.jky.spring;
+package com.spring;
 
 /**
  * @author jky
- * @date 2018/4/10 16:20
+ * @date 2018/4/19 11:30
  */
 public class Student {
     private String name;
     private int age;
+
+    public Student() {
+    }
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public String getName() {
         return name;
