@@ -12,8 +12,10 @@ public class SpringDemo {
     public static void main(String[] args)  {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
 
-        //检索配置实例spring.Student")
+        //检索配置实例spring.Student
         Student student = (Student)context.getBean("student");
+        Student student2 = (Student)context.getBean("student2");
+        Teacher teacher = (Teacher)context.getBean("teacher");
 
 //        student.setName("张三");
 //        student.setAge(15);

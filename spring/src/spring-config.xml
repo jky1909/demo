@@ -4,16 +4,38 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean  id = "student"  class = "com.spring.Student" >
-        <!-- set方法注入
+        <!-- set方法注入 -->
         <property name="name" value="小明"/>
-        <property name="age" value="12"/> -->
+        <property name="age" value="12"/>
+    </bean>
 
+    <bean id="student2" class="com.spring.Student">
+        <!-- 构造方法注入-->
         <constructor-arg value="张三"/>
         <constructor-arg>
-            <value>12</value>
+            <value>15</value>
         </constructor-arg>
 
+        <property name="teacher" ref="teacher" />
+        <!-- map注入 -->
+        <property name="map">
+            <map>
+                <entry key="1" value="语文" />
+                <entry key="2" value="数学" />
+            </map>
+        </property>
+    </bean>
 
+    <bean id="teacher" class="com.spring.Teacher">
+        <property name="name" value="王老师" />
+        <property name="age" value="30" />
+        <!-- list集合注入 -->
+        <property name="students">
+            <list>
+                <ref bean="student2" />
+                <ref bean="student" />
+            </list>
+        </property>
     </bean>
 
 </beans>
